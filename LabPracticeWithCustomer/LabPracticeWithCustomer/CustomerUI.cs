@@ -117,7 +117,7 @@ namespace LabPracticeWithCustomer
             _customer.Code = codeTextBox.Text;
             _customer.Name = nameTextBox.Text;
             _customer.Address = addressTextBox.Text;
-            _customer.Contact = addressTextBox.Text;
+            _customer.Contact = contactTextBox.Text;
             _customer.District = districtComboBox.Text;
             customerDataGridView.DataSource = _customerManager.SearchCustomer(_customer);
             if (_customerManager.SearchCustomer(_customer).Count<0)
